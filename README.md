@@ -2,7 +2,7 @@
 
 ## Overview
 
-Welcome to Graph-Based-DFA, a sophisticated C++ template designed for deterministic finite automata (DFA). This template leverages a graph-based approach to efficiently model and implement DFAs in C++. 
+Welcome to this Graph-Based-DFA, a C++ template designed for deterministic finite automata (DFA). This template leverages a graph-based approach to model and implement DFAs in C++. 
 
 ## Getting Started
 
@@ -13,6 +13,7 @@ To seamlessly integrate this template into your project, follow these steps:
    - `addNode`: Adds a new state to the DFA.
    - `addAwn`: Establishes a new path in the DFA.
    - `evaluate`: Inputs data and instructs the DFA to evaluate it.
+   and several more
 
 ## Example Usage of the DFA to determine wether a binary has an even or odd number of ones
 

@@ -13,6 +13,7 @@ To seamlessly integrate this template into your project, follow these steps:
    - `addNode`: Adds a new state to the DFA.
    - `addAwn`: Establishes a new path in the DFA.
    - `evaluate`: Inputs data and instructs the DFA to evaluate it.
+   
    and several more
 
 ## Example Usage of the DFA to determine wether a binary has an even or odd number of ones

@@ -9,6 +9,7 @@ protected:
   T initialState;
   T currentState;
   T finalState;
+  bool stuck;
 public:
   AFD(T initState);
   ~AFD();

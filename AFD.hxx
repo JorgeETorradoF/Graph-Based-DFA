@@ -8,6 +8,7 @@ AFD<T,C>::AFD(T initState)
 {
   this->initialState = initState;
   this->currentState = initState;
+  this->stuck = false;
   addNode(initState);
 }
 //destructor
@@ -100,6 +101,10 @@ void AFD<T,C>::evaluate(C path)
   {
     this->currentState = (newPath.second)->getValue();
   }
+  else
+  {
+    this->stuck = true;
+  }
 }
 //returns the current state
 template <class T, class C>
@@ -111,6 +116,6 @@ T AFD<T,C>::getCurrentState()
 template <class T, class C>
 bool AFD<T,C>::accepted()
 {
-  return (this->currentState == this->finalState);
+  return ((this->currentState == this->finalState) && !stuck);
 }
 #endif

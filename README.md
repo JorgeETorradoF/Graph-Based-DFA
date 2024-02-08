@@ -28,11 +28,13 @@ int main() {
   AFDTaller->addNode('o');
   AFDTaller->setFinalState('o');
   AFDTaller->addAwn('o', 'e','1');
+  AFDTaller->addAwn('e', 'e','0');
   AFDTaller->addAwn('e','o', '1');
+  AFDTaller->addAwn('o', 'o','0');
   std::string num = "00111";
   for(int i = 0; i < num.length(); i++)
     {
       AFDTaller->evaluate(num[i]);
     }
-  std::cout << "\nDoes the binary have an even number of ones? " << (AFDTaller->accepted() ? "\nyes" : "\nno") << std::endl;
+  std::cout << "\nHas an even number of ones? " << (AFDTaller->accepted() ? "\nyes" : "\nno") << std::endl;
 }

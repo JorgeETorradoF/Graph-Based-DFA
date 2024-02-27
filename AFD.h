@@ -16,7 +16,7 @@ public:
   void addNode(T value);
   void deleteNode(T value);
   void addAwn(T value1, T value2, C path);
-  void deleteAwn(T value1,C path);
+  void deleteAwn(T value1, C path);
   AFDNode<T, C> *findNode(T value);
   std::list<AFDNode<T, C> *> getNodes();
   T getFinalState();

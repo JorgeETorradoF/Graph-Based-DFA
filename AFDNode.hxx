@@ -50,6 +50,7 @@ void AFDNode<T,C>::deleteAwn(C path)
         this->awns.erase(it);
         break;
       }
+      it++;
     }
 }
 //searchs for an awn/path in this node

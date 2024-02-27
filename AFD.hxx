@@ -57,7 +57,8 @@ void AFD<T,C>::addAwn(T value1, T value2, C path)
 template<class T, class C>
 void AFD<T,C>::deleteAwn(T value1,C path)
 {
-  findNode(value1)->deleteAwn(path);
+  AFDNode<T,C>* target = findNode(value1);
+  target->deleteAwn(path);
 }
 //returns all the nodes/states of the DFA
 template<class T, class C>
